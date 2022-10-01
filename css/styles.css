@@ -1,8 +1,6 @@
-html,
 
  body{
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
  }
  :root{
    --main-font: 'Roboto', sans-serif;
@@ -15,14 +13,6 @@ html,
         --secondary-light:#F5F4FA;
 
  }
-h2{
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.16;
-      /* text-align: center; */
-      letter-spacing: 0.03em;
-      color:var(--main-dark);
-}
 
 /* Логотип в header */
 .logo-up{
@@ -42,7 +32,6 @@ a{
 }
 ul{
    list-style-type: none;
-   display: flex;
    margin: 0;
    padding: 0
 }
@@ -61,17 +50,20 @@ ul{
 .navigation a:hover,
 .navigation a:focus{
    color:var(--main-color-active);
+
+}
+
+.studio:current{
+   color: var(--main-color-active);
 }
 .navigation-menu>li:not(:first-child){
    margin-left: 50px ;
 }
 .navigation-contacts{
-      font-style: normal;
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.02em; 
-      justify-content: end;
 }
 .navigation-contacts a{
    color: var(--secondary-dark);;
@@ -96,7 +88,7 @@ ul{
  .button-action{
    cursor: pointer;
       background-color:var(--main-color-active);
-         font-family: 'Roboto';
+         font-family: inherit;
          font-weight: 700;
          font-size: 16px;
          line-height: 1.87;
@@ -118,7 +110,6 @@ ul{
       color: var(--main-dark);
  }
 .features p {
-   font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
@@ -170,9 +161,6 @@ ul{
       color: var(--main-dark);
 }
 .dscr-team-card{
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
       line-height: 1.18;
       text-align: center;
       letter-spacing: 0.03em;
@@ -195,11 +183,10 @@ address{
    font-style: normal;
 }
 .down-text {
-   font-weight: 400;
+  
    font-size: 14px;
    line-height: 1.71;
    letter-spacing: 0.03em;
-   flex-direction: column;
 }
 .down-text a {
    color: rgba(255, 255, 255, 0.6);
@@ -218,21 +205,17 @@ address{
 
 
 /* PORTFOLIO */
-.filters{
-      width: 575px;
-      height: 54px;
+
+.current{
+   color: var(--main-color-active);
 }
-   
 
 .button-filter{
-   cursor: pointer;
-         justify-content: center;
-         width: 125px;
-         height: 38px;         
+   cursor: pointer;      
          background-color:var(--secondary-light);
          border-radius: 4px;
          border: none;
-      font-family: 'Roboto';
+      font-family: inherit;
       font-weight: 500;
       font-size: 16px;
       line-height: 1.62;
@@ -248,13 +231,7 @@ address{
       color: var(--main-light);
 
 }
-.projects{
-   display: flex;
-   flex-wrap: wrap;
-   gap: 30px;
-   padding: 0;
-   margin: 0;
-}
+
 .projects h3{
       font-weight: 700;
       font-size: 18px;
@@ -263,13 +240,7 @@ address{
       color: var(--main-dark);
 }
 .projects p{
-      font-weight: 400;
-      font-size: 16px;
       line-height: 1.87;
       letter-spacing: 0.03em;
       color: var(--secondary-dark);
-}
-.projects li{
-   width: 370px;
-   height: 404px;
 }
