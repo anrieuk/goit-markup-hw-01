@@ -26,6 +26,8 @@
 .pre-logo{
    color: var(--main-color-active);
 }
+
+
  /* видалення в усіх списках та посилань налаштувань */
 a{
    text-decoration: none;
@@ -53,9 +55,6 @@ ul{
 
 }
 
-.studio:current{
-   color: var(--main-color-active);
-}
 .navigation-menu>li:not(:first-child){
    margin-left: 50px ;
 }
@@ -72,6 +71,12 @@ ul{
 .navigation-contacts a:focus{
    color:var(--main-color-active);
 }
+
+.navigation-menu .current{
+   color: var(--main-color-active);
+}
+
+
 /* Головна сторінка */
  .main-page{
          background-color: var(--main-background);
